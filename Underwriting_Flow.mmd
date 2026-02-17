@@ -1,0 +1,16 @@
+graph LR
+    A[<b>Application Phase</b>] --> B{Insurable Interest?}
+    B -- No --> C[Reject]
+    B -- Yes --> D[<b>Processing Phase</b>]
+    D --> E[Check MIB]
+    D --> F[Medical Exam]
+    D --> G[Review APS]
+    E & F & G --> H{<b>Risk Classification</b>}
+    H -- Standard --> I[Normal Premium]
+    H -- Substandard --> J[Rated Policy]
+    H -- Preferred --> K[Lower Premium]
+    H -- Declined --> L[No Coverage]
+    
+    style A fill:#f9f,stroke:#333
+    style H fill:#99f,stroke:#333
+    style I,J,K,L fill:#fff,stroke:#333

@@ -1,0 +1,17 @@
+graph TD
+    subgraph "Project: Life Insurance AZ 2026 Study Guide"
+    A[📂 Source Material: 7 Folders of Images] --> B[🔍 Data Extraction: 387 Questions Compiled]
+    B --> C[🧹 Phase 2: Cleanup & Verification]
+    C --> D[📄 Multi-Format Output: MD, DOCX, PPTX]
+    D --> E[🎓 Final Study Tools]
+    
+    style B fill:#f9f,stroke:#333,stroke-width:4px
+    style C fill:#ccf,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+    end
+
+    subgraph "Current Task: Cleanup"
+    C1[Fix OCR Noise] --> C2[Restore Missing Options]
+    C2 --> C3[Verify Answers via Domain Knowledge]
+    end
+    
+    C --- C1

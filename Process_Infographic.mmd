@@ -1,0 +1,15 @@
+graph TD
+    A[Application Submission & Initial Premium] --> B{Conditional Receipt Issued?}
+    B -- Yes --> C[Medical Exam Scheduled]
+    B -- No --> D[No Coverage Until Delivery]
+    C --> E[Insurability Determination]
+    E -- Insurable at Time of App --> F[Coverage Retroactive to App Date]
+    E -- Insurable at Time of Exam --> G[Coverage Starts on Exam Date]
+    E -- Not Insurable --> H[Application Rejected/Counter-Offer]
+    F --> I[Policy Issued & Delivered]
+    G --> I
+    D --> E
+    
+    style F fill:#d4edda,stroke:#28a745
+    style G fill:#d4edda,stroke:#28a745
+    style H fill:#f8d7da,stroke:#dc3545

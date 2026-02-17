@@ -1,0 +1,13 @@
+graph TD
+    A[Application Submission] --> B{Initial Review}
+    B -->|Incomplete| C[Request Additional Info]
+    B -->|Complete| D[Medical Examination]
+    D --> E[MIB Check]
+    E --> F[Underwriting Decision]
+    F -->|Accept| G[Policy Issue]
+    F -->|Reject| H[Notice of Adverse Selection]
+    G --> I[Delivery & Premium Receipt]
+    
+    style G fill:#9f9,stroke:#333,stroke-width:2px
+    style H fill:#f99,stroke:#333,stroke-width:2px
+    style F fill:#99f,stroke:#333,stroke-width:2px
