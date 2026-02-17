@@ -1,29 +1,26 @@
-# Report: Life Insurance AZ 2026 Web App Architecture
+# System Architecture Report: Insurance & Mixology Monorepo
 
 ## 1. Core Architecture
-The application is built using the **Next.js 16** (App Router) framework, leveraging **Tailwind CSS 4** for styling and **TypeScript** for type safety. It is hosted on **Vercel**, which provides high-performance Edge functions for AI and seamless deployment.
+The workspace uses a **Monorepo** structure:
+- **`/frontend`**: Life Insurance AZ 2026 Study App.
+- **`/bartender-app`**: Professional Mixology Portfolio.
+Both are built with **Next.js 16**, **Tailwind CSS 4**, and **TypeScript**. They are hosted as separate projects on **Vercel**, sharing a single GitHub repository.
 
-## 2. Data Management (Supabase + Prisma)
-Your data is currently managed in a **Supabase PostgreSQL** database.
-- **ORM (Object-Relational Mapper):** We use **Prisma** to define the database schema and communicate with the database.
-- **Tables:**
-  - `Question`: Stores 307 verified insurance questions, options, and explanations.
-  - `User`: Manages user accounts and profiles.
-  - `Score`: Tracks practice exam results and progress.
-- **Seeding:** A custom Node.js script (`direct-seed.js`) was used to parse the OCR text and upload it directly to the cloud.
+## 2. High-Performance Visuals
+We have implemented several trending UI components:
+- **Butter-Smooth Scroller:** The `CardScanner` component uses Framer Motion's `useAnimationFrame` and `useMotionValue` to achieve sub-pixel smooth motion at 120Hz, perfectly synced with high-refresh-rate displays.
+- **WebGL Backgrounds:** Interactive dot-grid shaders and 3D topographical maps react to mouse movement using `@react-three/fiber`.
+- **ASCII Glitch System:** Real-time hardware-accelerated clipping logic provides a futuristic "digital verification" aesthetic.
 
-## 3. High-End Visuals & Animations
-The app features several trending UI components inspired by `21st.dev` and `Aceternity`:
-- **3D Rendering:** Uses `@react-three/fiber` (Three.js) for the interactive Dot Shader backgrounds and particle systems.
-- **3D Parallax:** The `HalideLanding` component uses a custom 3D transform engine for topographical depth.
-- **Scroll Animations:** Integrated `framer-motion` for the 3D Container Scroll effect.
-- **Evervault Scanner:** A custom-built hardware-accelerated clipping system that glitches cards into ASCII code in real-time.
+## 3. Data Management
+- **Database:** Two separate **Supabase PostgreSQL** databases (connected via Prisma).
+- **Optimization:** All database commands (`db push`, `generate`) are configured to use the **Session Pooler (Port 5432)** to bypass IPv6 and transaction locking issues.
+- **Live Data:** 307 verified insurance questions are live in the production database.
 
-## 4. AI Study Assistant
-The chatbot uses the **Vercel AI SDK v6** with a **"Bring Your Own Key" (BYOK)** model.
-- **Providers:** Supports both **Google Gemini 1.5 Flash** and **OpenAI GPT-4o mini**.
-- **Security:** API keys are stored in the user's browser `localStorage`, ensuring zero server-side costs and maximum privacy.
-- **Context:** The system prompt primes the AI with Arizona 2026 insurance laws.
+## 4. AI & BYOK Model
+The applications use a **"Bring Your Own Key"** model via the **Vercel AI SDK v6**.
+- **User Choice:** Students can use free **Gemini 1.5 Flash** or OpenAI keys.
+- **Zero-Cost Hosting:** Because keys are stored in the user's browser `localStorage`, there are no API costs for the site owner.
 
 ---
-*Date: February 17, 2026*
+*Last Update: February 17, 2026*
