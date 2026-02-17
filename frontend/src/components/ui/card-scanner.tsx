@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Pause, Play, RotateCcw, ArrowLeftRight } from "lucide-react";
+import { motion, useAnimationFrame, useMotionValue } from 'framer-motion';
 
 // --- Types & Constants ---
 const cardImages = [
@@ -52,29 +53,32 @@ export const CardScanner = () => {
   const [isAnimating, setIsAnimating] = useState(true);
   const [direction, setDirection] = useState(-1);
   const [velocity, setVelocity] = useState(120);
-  const [position, setPosition] = useState(0);
-  const [glitchTrigger, setGlitchTrigger] = useState(0);
   const [mounted, setMounted] = useState(false);
+  const [glitchTrigger, setGlitchTrigger] = useState(0);
   
   const containerRef = useRef<HTMLDivElement>(null);
   const particleCanvasRef = useRef<HTMLCanvasElement>(null);
   const scannerCanvasRef = useRef<HTMLCanvasElement>(null);
   
+  const x = useMotionValue(0);
+  
   const stateRef = useRef({
-    position: 0,
     velocity: 120,
     direction: -1,
     isAnimating: true,
     isDragging: false,
-    lastTime: 0,
-    lastMouseX: 0,
-    mouseVelocity: 0,
     scanningActive: false,
   });
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    stateRef.current.isAnimating = isAnimating;
+    stateRef.current.direction = direction;
+    stateRef.current.velocity = velocity;
+  }, [isAnimating, direction, velocity]);
 
   // ASCII Glitch Loop
   useEffect(() => {
@@ -86,6 +90,51 @@ export const CardScanner = () => {
     }, 150);
     return () => clearInterval(interval);
   }, [mounted]);
+
+  // --- Smooth Scroll Loop ---
+  useAnimationFrame((time, delta) => {
+    if (!mounted || !stateRef.current.isAnimating || stateRef.current.isDragging) return;
+
+    const cardWidth = 400 + 60;
+    const singleSetWidth = cardWidth * 10;
+    
+    const moveBy = (stateRef.current.velocity * (delta / 1000)) * stateRef.current.direction;
+    let nextX = x.get() + moveBy;
+
+    if (stateRef.current.direction === -1 && nextX < -singleSetWidth) {
+      nextX += singleSetWidth;
+    } else if (stateRef.current.direction === 1 && nextX > 0) {
+      nextX -= singleSetWidth;
+    }
+
+    x.set(nextX);
+
+    const scannerX = window.innerWidth / 2;
+    let anyActive = false;
+    const cards = document.querySelectorAll('.card-wrapper');
+    
+    cards.forEach((card: any) => {
+      const rect = card.getBoundingClientRect();
+      const normal = card.querySelector('.card-normal');
+      const ascii = card.querySelector('.card-ascii');
+      
+      if (normal && ascii && rect.left < scannerX + 4 && rect.right > scannerX - 4) {
+          anyActive = true;
+          const intersect = ((scannerX - rect.left) / rect.width) * 100;
+          normal.style.setProperty('--clip-right', `${intersect}%`);
+          ascii.style.setProperty('--clip-left', `${intersect}%`);
+      } else if (normal && ascii) {
+          if (rect.right < scannerX) {
+              normal.style.setProperty('--clip-right', '100%');
+              ascii.style.setProperty('--clip-left', '100%');
+          } else {
+              normal.style.setProperty('--clip-right', '0%');
+              ascii.style.setProperty('--clip-left', '0%');
+          }
+      }
+    });
+    stateRef.current.scanningActive = anyActive;
+  });
 
   // --- Particle Systems ---
   useEffect(() => {
@@ -228,63 +277,6 @@ export const CardScanner = () => {
     return () => cancelAnimationFrame(frame);
   }, [mounted]);
 
-  // --- Card Stream Loop ---
-  useEffect(() => {
-    if (!mounted) return;
-    let frame: number;
-    const loop = (t: number) => {
-      const dt = (t - stateRef.current.lastTime) / 1000;
-      stateRef.current.lastTime = t;
-
-      if (stateRef.current.isAnimating && !stateRef.current.isDragging) {
-        stateRef.current.position += stateRef.current.velocity * stateRef.current.direction * dt;
-        
-        const cardWidth = 400 + 60;
-        const singleSetWidth = cardWidth * 10;
-
-        // Seamless Wrap logic:
-        if (stateRef.current.direction === -1 && stateRef.current.position < -singleSetWidth) {
-            stateRef.current.position += singleSetWidth;
-        }
-        if (stateRef.current.direction === 1 && stateRef.current.position > 0) {
-            stateRef.current.position -= singleSetWidth;
-        }
-
-        setPosition(stateRef.current.position);
-      }
-
-      const scannerX = window.innerWidth / 2;
-      let anyActive = false;
-      
-      const cards = document.querySelectorAll('.card-wrapper');
-      cards.forEach((card: any) => {
-        const rect = card.getBoundingClientRect();
-        const normal = card.querySelector('.card-normal');
-        const ascii = card.querySelector('.card-ascii');
-        
-        if (normal && ascii && rect.left < scannerX + 4 && rect.right > scannerX - 4) {
-            anyActive = true;
-            const intersect = ((scannerX - rect.left) / rect.width) * 100;
-            normal.style.setProperty('--clip-right', `${intersect}%`);
-            ascii.style.setProperty('--clip-left', `${intersect}%`);
-        } else if (normal && ascii) {
-            if (rect.right < scannerX) {
-                normal.style.setProperty('--clip-right', '100%');
-                ascii.style.setProperty('--clip-left', '100%');
-            } else {
-                normal.style.setProperty('--clip-right', '0%');
-                ascii.style.setProperty('--clip-left', '0%');
-            }
-        }
-      });
-      stateRef.current.scanningActive = anyActive;
-
-      frame = requestAnimationFrame(loop);
-    };
-    frame = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(frame);
-  }, [mounted]);
-
   if (!mounted) return <div className="h-[500px] w-full bg-black" />;
 
   return (
@@ -315,9 +307,7 @@ export const CardScanner = () => {
         </Button>
         <Button variant="outline" size="sm" className="rounded-full bg-white/10 backdrop-blur-md border-white/20"
             onClick={() => {
-                stateRef.current.position = 0;
-                stateRef.current.velocity = 120;
-                setPosition(0);
+                x.set(0);
             }}>
           <RotateCcw className="h-4 w-4" />
         </Button>
@@ -339,8 +329,8 @@ export const CardScanner = () => {
 
       <div className={cn("scanner-glow", stateRef.current.scanningActive && "opacity-100")} />
 
-      <div className="flex items-center gap-[60px] will-change-transform pointer-events-none" 
-           style={{ transform: `translateX(${position}px)` }}>
+      <motion.div className="flex items-center gap-[60px] will-change-transform pointer-events-none" 
+           style={{ x }}>
         {[...Array(20)].map((_, i) => (
           <div key={i} className="card-wrapper">
             <div className="card card-normal">
@@ -358,7 +348,7 @@ export const CardScanner = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
       <div className="absolute bottom-6 flex flex-col items-center gap-2 z-30">
         <div className="text-[10px] font-mono text-white/20 tracking-[10px] uppercase">
