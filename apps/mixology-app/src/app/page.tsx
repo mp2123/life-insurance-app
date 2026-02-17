@@ -25,6 +25,7 @@ import { AboutTheBartender } from "@/components/ui/about-bartender";
 import { RecipeRequestForm } from "@/components/ui/recipe-request-form";
 import { AffiliateDisclosure } from "@/components/ui/affiliate-disclosure";
 import { SideTimelineNav } from "@/components/ui/side-timeline-nav";
+import { BarBookDashboard } from "@/components/ui/bar-book-dashboard";
 
 export default function DemoOne() {
   const [mounted, setMounted] = useState(false);
@@ -58,6 +59,11 @@ export default function DemoOne() {
         {/* Digital Recipe Discovery Section */}
         <section className="w-full mt-20" id="discovery">
           <CardScanner />
+        </section>
+
+        {/* The Bar Book (User Collection) */}
+        <section id="book">
+          <BarBookDashboard />
         </section>
 
         {/* The Recipe Library */}

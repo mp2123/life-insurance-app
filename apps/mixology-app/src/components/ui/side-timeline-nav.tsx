@@ -11,12 +11,14 @@ import {
   ShoppingCart, 
   User, 
   Send,
-  Sparkles
+  Sparkles,
+  BookMarked
 } from 'lucide-react';
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
   { id: 'discovery', label: 'Discovery', icon: Search },
+  { id: 'book', label: 'Bar Book', icon: BookMarked },
   { id: 'recipes', label: 'Library', icon: BookOpen },
   { id: 'tutorials', label: 'Vault', icon: Video },
   { id: 'tools', label: 'Pro Shop', icon: ShoppingCart },
