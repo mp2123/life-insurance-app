@@ -240,9 +240,15 @@ export const CardScanner = () => {
         stateRef.current.position += stateRef.current.velocity * stateRef.current.direction * dt;
         
         const cardWidth = 400 + 60;
-        const totalWidth = cardWidth * 10;
-        if (stateRef.current.position < -totalWidth) stateRef.current.position = window.innerWidth;
-        if (stateRef.current.position > window.innerWidth) stateRef.current.position = -totalWidth;
+        const singleSetWidth = cardWidth * 10;
+
+        // Seamless Wrap logic:
+        if (stateRef.current.direction === -1 && stateRef.current.position < -singleSetWidth) {
+            stateRef.current.position += singleSetWidth;
+        }
+        if (stateRef.current.direction === 1 && stateRef.current.position > 0) {
+            stateRef.current.position -= singleSetWidth;
+        }
 
         setPosition(stateRef.current.position);
       }
@@ -335,14 +341,14 @@ export const CardScanner = () => {
 
       <div className="flex items-center gap-[60px] will-change-transform pointer-events-none" 
            style={{ transform: `translateX(${position}px)` }}>
-        {[...Array(10)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <div key={i} className="card-wrapper">
             <div className="card card-normal">
               <img src={cardImages[i % cardImages.length]} className="w-full h-full object-cover" alt="Card" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
                 <p className="text-[8px] uppercase tracking-widest opacity-60">Policy ID</p>
-                <p className="font-mono text-sm tracking-[4px]">AZ-2026-LIFE-{1000 + i}</p>
+                <p className="font-mono text-sm tracking-[4px]">AZ-2026-LIFE-{1000 + (i % 10)}</p>
               </div>
             </div>
             <div className="card card-ascii">
