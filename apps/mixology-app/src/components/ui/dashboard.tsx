@@ -35,7 +35,7 @@ const features = [
   },
 ];
 
-export function StudyDashboard() {
+export function MixologyDashboard() {
   return (
     <section className="mx-auto w-full max-w-5xl px-4 py-20">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">

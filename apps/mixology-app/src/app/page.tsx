@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Header } from "@/components/ui/header-1";
 import { Chatbot } from "@/components/ui/chatbot";
-import { StudyDashboard } from "@/components/ui/dashboard";
+import { MixologyDashboard } from "@/components/ui/dashboard";
 import { Flashcards } from "@/components/ui/flashcards";
 import { HeroSection, LogosSection } from "@/components/ui/hero-1";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
@@ -195,7 +195,7 @@ export default function DemoOne() {
         <section id="review">
           <Flashcards />
         </section>
-        <StudyDashboard />
+        <MixologyDashboard />
 
         {/* Dot Shader Background Section */}
         <section className="relative w-full h-[500px] mt-20 flex items-center justify-center overflow-hidden">
