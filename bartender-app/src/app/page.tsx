@@ -18,6 +18,7 @@ import { Box, Settings, Lock, Sparkles, Search, Video, Wine, Utensils, Award } f
 import { cn } from "@/lib/utils";
 
 import { CardScanner } from "@/components/ui/card-scanner";
+import { VideoGallery } from "@/components/ui/video-gallery";
 
 export default function DemoOne() {
   const [mounted, setMounted] = useState(false);
@@ -47,6 +48,9 @@ export default function DemoOne() {
         <section className="w-full mt-20">
           <CardScanner />
         </section>
+
+        {/* Video Tutorial Vault */}
+        <VideoGallery />
 
         {/* 3D Topographical Hero Section */}
         <section className="w-full mt-20">
