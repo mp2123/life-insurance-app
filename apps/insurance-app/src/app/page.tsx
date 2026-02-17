@@ -1,3 +1,4 @@
+// apps/insurance-app/src/app/page.tsx
 "use client";
 
 import { useEffect } from "react";
@@ -18,6 +19,7 @@ import { Box, Settings, Lock, Sparkles, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { CardScanner } from "@/components/ui/card-scanner";
+import { SideTimelineNav } from "@/components/ui/side-timeline-nav";
 
 export default function DemoOne() {
   useEffect(() => {
@@ -26,6 +28,8 @@ export default function DemoOne() {
 
   return (
     <div className="flex w-full flex-col relative bg-background overflow-x-hidden">
+      <SideTimelineNav />
+      
       {/* Interactive Canvas Background for Hero */}
       <canvas
         className="bg-skin-base pointer-events-none absolute inset-0 mx-auto z-0 opacity-30"
@@ -36,10 +40,12 @@ export default function DemoOne() {
 
       <main className="grow relative z-10">
         {/* Hero with Canvas */}
-        <HeroSection />
+        <section id="home">
+          <HeroSection />
+        </section>
 
         {/* Digital Policy Scanning Section */}
-        <section className="w-full mt-20">
+        <section className="w-full mt-20" id="discovery">
           <CardScanner />
         </section>
 
@@ -107,7 +113,7 @@ export default function DemoOne() {
         </section>
 
         {/* Glowing Dashboard Section */}
-        <section className="mx-auto w-full max-w-5xl px-4 py-20">
+        <section className="mx-auto w-full max-w-5xl px-4 py-20" id="dashboard">
             <h2 className="text-4xl font-bold text-center mb-16">High-Performance Modules</h2>
             <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
                 <GridItem
@@ -144,7 +150,9 @@ export default function DemoOne() {
         </section>
 
         {/* Existing Components */}
-        <Flashcards />
+        <section id="review">
+          <Flashcards />
+        </section>
         <StudyDashboard />
 
         {/* Dot Shader Background Section */}

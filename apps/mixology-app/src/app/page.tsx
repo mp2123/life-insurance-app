@@ -47,7 +47,9 @@ export default function DemoOne() {
         <main className="grow relative z-10">
           <section id="home"><HeroSection /></section>
           <section id="discovery" className="w-full mt-20"><CardScanner /></section>
-          <section id="book"><BarBookDashboard /></section>
+          <section id="book">
+            <BarBookDashboard onSignInClick={() => setAuthDialogOpen(true)} />
+          </section>
           <RecipeGallery 
             user={user} 
             onSignInClick={() => setAuthDialogOpen(true)} 

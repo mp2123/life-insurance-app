@@ -6,9 +6,12 @@ import { createClient } from '@/utils/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { BookMarked, Heart, History, Sparkles, ChevronRight } from 'lucide-react';
-import { AuthDialog } from './auth-dialog';
 
-export function BarBookDashboard() {
+interface BarBookDashboardProps {
+  onSignInClick: () => void;
+}
+
+export function BarBookDashboard({ onSignInClick }: BarBookDashboardProps) {
   const [user, setUser] = useState<any>(null);
   const supabase = createClient();
 
@@ -36,7 +39,13 @@ export function BarBookDashboard() {
             <p className="text-muted-foreground max-w-lg mx-auto">
               Save your favorite riffs, track your progress through the vault, and build your digital cocktail collection.
             </p>
-            <AuthDialog trigger={<Button size="lg" className="rounded-full px-12 py-6 font-bold uppercase tracking-widest shadow-xl shadow-primary/20">Sign In to Start Building</Button>} />
+            <Button 
+              size="lg" 
+              className="rounded-full px-12 py-6 font-bold uppercase tracking-widest shadow-xl shadow-primary/20"
+              onClick={onSignInClick}
+            >
+              Sign In to Start Building
+            </Button>
           </div>
         </Card>
       </section>
@@ -44,7 +53,7 @@ export function BarBookDashboard() {
   }
 
   return (
-    <section className="mx-auto w-full max-w-5xl px-4 py-20" id="bar-book">
+    <section className="mx-auto w-full max-w-5xl px-4 py-20" id="book">
       <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-primary font-mono text-[10px] uppercase tracking-[0.3em]">
