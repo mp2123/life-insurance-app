@@ -84,7 +84,7 @@ export function LogosSection() {
 	return (
 		<section className="relative space-y-4 border-t pt-6 pb-10">
 			<h2 className="text-center font-medium text-lg text-muted-foreground tracking-tight md:text-xl">
-				Exam Content based on <span className="text-foreground">National Standards</span>
+				Featured Spirits & <span className="text-foreground">Glassware Partners</span>
 			</h2>
 			<div className="relative z-10 mx-auto max-w-4xl">
 				<LogoCloud logos={logos} />
@@ -95,27 +95,27 @@ export function LogosSection() {
 
 const logos = [
 	{
-		src: "https://upload.wikimedia.org/wikipedia/commons/e/e9/State_Farm_logo.svg",
-		alt: "State Farm",
+		src: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Bacardi_Logo.svg/1200px-Bacardi_Logo.svg.png",
+		alt: "Bacardi",
 	},
 	{
-		src: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Allstate_logo.svg",
-		alt: "Allstate",
+		src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hennessy_Logo.svg/1200px-Hennessy_Logo.svg.png",
+		alt: "Hennessy",
 	},
 	{
-		src: "https://upload.wikimedia.org/wikipedia/commons/5/52/New_York_Life_Insurance_Company_logo.svg",
-		alt: "New York Life",
+		src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Jack_Daniel%27s_Logo.svg/1200px-Jack_Daniel%27s_Logo.svg.png",
+		alt: "Jack Daniel's",
 	},
 	{
-		src: "https://upload.wikimedia.org/wikipedia/commons/3/32/Prudential_Financial_logo.svg",
-		alt: "Prudential",
+		src: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Tanqueray_Logo.svg/1200px-Tanqueray_Logo.svg.png",
+		alt: "Tanqueray",
 	},
 	{
-		src: "https://upload.wikimedia.org/wikipedia/en/b/b5/MetLife_logo.svg",
-		alt: "MetLife",
+		src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Absolut_Vodka_logo.svg/1200px-Absolut_Vodka_logo.svg.png",
+		alt: "Absolut",
 	},
 	{
-		src: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Liberty_Mutual_logo.svg",
-		alt: "Liberty Mutual",
+		src: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Patron_Tequila_logo.svg/1200px-Patron_Tequila_logo.svg.png",
+		alt: "Patron",
 	},
 ];

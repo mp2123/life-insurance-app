@@ -12,16 +12,16 @@ export function Header() {
 
 	const links = [
 		{
-			label: 'Study Guide',
-			href: '#guide',
+			label: 'Cocktail Library',
+			href: '#recipes',
 		},
 		{
-			label: 'Practice Exam',
-			href: '#exam',
+			label: 'Video Tutorials',
+			href: '#tutorials',
 		},
 		{
-			label: 'Mindmaps',
-			href: '#mindmaps',
+			label: 'Bar Tools',
+			href: '#tools',
 		},
 	];
 

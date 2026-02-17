@@ -7,10 +7,10 @@ import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 
 const cards = [
-  { q: "What is the 'Free-Look Period'?", a: "A period (usually 10-30 days) during which the policyholder can cancel for a full refund." },
-  { q: "When must 'Insurable Interest' exist?", a: "At the time of the application." },
-  { q: "What is the 'MIB'?", a: "Medical Information Bureau - a non-profit association that shares medical data among insurers." },
-  { q: "What is 'Adverse Selection'?", a: "The tendency of higher-risk individuals to seek insurance more than average risks." },
+  { q: "What is a 'Jigger'?", a: "A dual-ended measuring tool used to ensure precise pours for cocktail balance." },
+  { q: "What does it mean to 'Muddle'?", a: "To press ingredients (like mint or lime) against the side of a glass to release flavors." },
+  { q: "What is the 'Rule of 3' in cocktails?", a: "The classic ratio of 2 parts spirit, 1 part sour, and 1 part sweet." },
+  { q: "What is a 'Dry Shake'?", a: "Shaking ingredients (usually with egg white) without ice to create a thick foam." },
 ];
 
 export function Flashcards() {

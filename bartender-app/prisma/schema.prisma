@@ -7,30 +7,35 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model User {
   id        String   @id @default(cuid())
   email     String   @unique
   name      String?
-  scores    Score[]
   createdAt DateTime @default(now())
 }
 
-model Question {
-  id          Int      @id @default(autoincrement())
-  text        String
-  options     String[] // Array of strings for the multiple choice options
-  answer      String   // The correct option text
-  explanation String?
-  category    String?
+model Recipe {
+  id           Int      @id @default(autoincrement())
+  name         String
+  ingredients  String[]
+  instructions String
+  glassware    String?
+  videoUrl     String?
+  imageUrl     String?
+  category     String?  // e.g., "Classic", "Original", "Mocktail"
+  createdAt    DateTime @default(now())
 }
 
-model Score {
-  id        String   @id @default(cuid())
-  userId    String
-  user      User     @relation(fields: [userId], references: id)
-  total     Int
-  correct   Int
-  timestamp DateTime @default(now())
+model AffiliateLink {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String?
+  url         String
+  imageUrl    String?
+  category    String?  // e.g., "Shakers", "Glassware", "Books"
+  createdAt   DateTime @default(now())
 }
