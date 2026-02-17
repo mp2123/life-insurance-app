@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { GlassWater, Beaker, Flame, Droplets } from 'lucide-react';
+import { GlassWater, Beaker, Flame, Droplets, FileDown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const recipes = [
   {
@@ -60,11 +61,14 @@ export function RecipeGallery() {
                     </div>
                   </div>
                   <CardTitle className="text-2xl font-black mb-4 group-hover:text-primary transition-colors">{recipe.name}</CardTitle>
-                  <div className="flex flex-wrap gap-2 mt-auto">
+                  <div className="flex flex-wrap gap-2 mt-auto mb-6">
                     {recipe.ingredients.map((ing, j) => (
                       <span key={j} className="text-[10px] bg-muted/50 px-2 py-1 rounded text-muted-foreground">{ing}</span>
                     ))}
                   </div>
+                  <Button variant="outline" size="sm" className="w-full rounded-xl gap-2 text-xs font-bold uppercase tracking-widest group/btn hover:bg-primary hover:text-primary-foreground transition-all">
+                    Download Card <FileDown className="h-3.5 w-3.5 group-hover/btn:translate-y-0.5 transition-transform" />
+                  </Button>
                 </CardHeader>
               </Card>
             </div>

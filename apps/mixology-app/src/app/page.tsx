@@ -23,6 +23,8 @@ import { RecipeGallery } from "@/components/ui/recipe-gallery";
 import { AffiliateStore } from "@/components/ui/affiliate-store";
 import { AboutTheBartender } from "@/components/ui/about-bartender";
 import { RecipeRequestForm } from "@/components/ui/recipe-request-form";
+import { AffiliateDisclosure } from "@/components/ui/affiliate-disclosure";
+import { SideTimelineNav } from "@/components/ui/side-timeline-nav";
 
 export default function DemoOne() {
   const [mounted, setMounted] = useState(false);
@@ -36,6 +38,9 @@ export default function DemoOne() {
 
   return (
     <div className="flex w-full flex-col relative bg-background overflow-x-hidden">
+      {/* Space-like Side Timeline Navigation */}
+      <SideTimelineNav />
+
       {/* Interactive Canvas Background for Hero */}
       <canvas
         className="bg-skin-base pointer-events-none absolute inset-0 mx-auto z-0 opacity-30"
@@ -46,18 +51,24 @@ export default function DemoOne() {
 
       <main className="grow relative z-10">
         {/* Hero with Canvas */}
-        <HeroSection />
+        <section id="home">
+          <HeroSection />
+        </section>
 
         {/* Digital Recipe Discovery Section */}
-        <section className="w-full mt-20">
+        <section className="w-full mt-20" id="discovery">
           <CardScanner />
         </section>
 
         {/* The Recipe Library */}
-        <RecipeGallery />
+        <section id="recipes">
+          <RecipeGallery />
+        </section>
 
         {/* Video Tutorial Vault */}
-        <VideoGallery />
+        <section id="tutorials">
+          <VideoGallery />
+        </section>
 
         {/* 3D Topographical Hero Section */}
         <section className="w-full mt-20">
@@ -93,13 +104,19 @@ export default function DemoOne() {
         </section>
 
         {/* Professional Bar Gear Shop */}
-        <AffiliateStore />
+        <section id="tools">
+          <AffiliateStore />
+        </section>
 
         {/* About the Bartender */}
-        <AboutTheBartender />
+        <section id="about">
+          <AboutTheBartender />
+        </section>
 
         {/* Recipe Request Section */}
-        <RecipeRequestForm />
+        <section id="request">
+          <RecipeRequestForm />
+        </section>
 
         {/* Interactive Spline 3D Section */}
         <section className="mx-auto w-full max-w-5xl px-4 py-20">
@@ -132,7 +149,7 @@ export default function DemoOne() {
         </section>
 
         {/* Glowing Dashboard Section */}
-        <section className="mx-auto w-full max-w-5xl px-4 py-20">
+        <section className="mx-auto w-full max-w-5xl px-4 py-20" id="dashboard">
             <h2 className="text-4xl font-bold text-center mb-16 uppercase tracking-tighter">Mixology Excellence</h2>
             <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
                 <GridItem
@@ -169,7 +186,9 @@ export default function DemoOne() {
         </section>
 
         {/* Existing Components */}
-        <Flashcards />
+        <section id="review">
+          <Flashcards />
+        </section>
         <StudyDashboard />
 
         {/* Dot Shader Background Section */}
@@ -190,6 +209,7 @@ export default function DemoOne() {
         <LogosSection />
       </main>
 
+      <AffiliateDisclosure />
       <Chatbot />
     </div>
   );
@@ -200,7 +220,6 @@ interface GridItemProps {
   icon: React.ReactNode;
   title: string;
   description: React.ReactNode;
-  
 }
 
 const GridItem = ({ area, icon, title, description }: GridItemProps) => {

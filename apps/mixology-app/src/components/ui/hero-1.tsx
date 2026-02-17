@@ -71,15 +71,19 @@ export function HeroSection() {
 				</p>
 
 				<div className="fade-in slide-in-from-bottom-10 flex animate-in flex-row flex-wrap items-center justify-center gap-3 fill-mode-backwards pt-2 delay-300 duration-500 ease-out">
-					<Button className="rounded-full" size="lg" variant="secondary">
-						<PhoneCallIcon data-icon="inline-start" className="size-4 mr-2" />{" "}
-						View Recipes
-					</Button>
-					<Button className="rounded-full " size="lg">
-						Watch Tutorials{" "}
-						<ArrowRightIcon 
-						className="size-4 ms-2"data-icon="inline-end" />
-					</Button>
+					<a href="#recipes">
+						<Button className="rounded-full" size="lg" variant="secondary">
+							<PhoneCallIcon data-icon="inline-start" className="size-4 mr-2" />{" "}
+							View Recipes
+						</Button>
+					</a>
+					<a href="#tutorials">
+						<Button className="rounded-full " size="lg">
+							Watch Tutorials{" "}
+							<ArrowRightIcon 
+							className="size-4 ms-2"data-icon="inline-end" />
+						</Button>
+					</a>
 				</div>
 			</div>
 		</section>

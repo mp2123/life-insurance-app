@@ -6,6 +6,10 @@ import { MenuToggleIcon } from '@/components/ui/menu-toggle-icon';
 import { useScroll } from '@/components/ui/use-scroll';
 import { createPortal } from 'react-dom';
 
+import { SearchCommand } from '@/components/ui/search-command';
+
+import { AuthDialog } from '@/components/ui/auth-dialog';
+
 export function Header() {
 	const [open, setOpen] = React.useState(false);
 	const scrolled = useScroll(10);
@@ -47,14 +51,17 @@ export function Header() {
 				<div className="hover:bg-accent rounded-md p-2">
 					<WordmarkIcon className="h-4" />
 				</div>
+				<SearchCommand />
 				<div className="hidden items-center gap-2 md:flex">
 					{links.map((link) => (
 						<a key={link.label} className={buttonVariants({ variant: 'ghost' })} href={link.href}>
 							{link.label}
 						</a>
 					))}
-					<Button variant="outline">Sign In</Button>
-					<Button>Get Started</Button>
+					<AuthDialog trigger={<Button variant="outline">Sign In</Button>} />
+					<a href="#recipes">
+						<Button>Get Started</Button>
+					</a>
 				</div>
 				<Button
 					size="icon"
