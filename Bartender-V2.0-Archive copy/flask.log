@@ -1,0 +1,2494 @@
+ * Serving Flask app 'app.py'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:19:33] "GET /recipes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:19:33] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:19:33] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:19:33] "GET /static/js/search.js HTTP/1.1" 200 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:19:33] "GET /api/cocktails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:19:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_contact.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:56:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:56:38] "GET /recipes HTTP/1.1" 200 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:56:46] "GET /recipe/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:56:53] "GET /contact HTTP/1.1" 200 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:57:00] "GET /api/cocktails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:57:08] "[33mGET /nonexistent HTTP/1.1[0m" 404 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:08] "GET /recipe/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:08] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:08] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:44] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:44] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:44] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 03:58:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:02:16] "GET /recipes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:02:16] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:02:16] "GET /static/js/search.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:02:16] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:02:16] "GET /api/cocktails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:02:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:11:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:11:23] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:11:23] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:11:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:11:57] "GET /recipe/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:11:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:11:57] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:33] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:36] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:39] "GET /recipes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:39] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:39] "GET /static/js/search.js HTTP/1.1" 200 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 04:12:39] "GET /api/cocktails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:47] "GET /recipes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:47] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:47] "[36mGET /static/js/search.js HTTP/1.1[0m" 304 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:47] "GET /api/cocktails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:52] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:21:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:22:51] "GET /recipes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:22:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:22:51] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:22:51] "[36mGET /static/js/search.js HTTP/1.1[0m" 304 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:22:51] "GET /api/cocktails HTTP/1.1" 200 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:23:40] "GET /recipe/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:23:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:23:40] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:23:59] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:23:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:23:59] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:24:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:24:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 12:24:40] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:app:Loaded 8 cocktails from /Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/data/cocktails.json
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:38] "GET /recipe/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:38] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:45] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:45] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2026 14:31:50] "[33mGET /static/js/main.js HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/config/settings.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/mred_mls.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/news_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/visual_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/county_records.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/models/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/models/h2o_engine.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/generator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/generator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/news_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/models/h2o_engine.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/models/h2o_engine.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/models/h2o_engine.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/models/h2o_engine.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/visual_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/visual_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/visual_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/generator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/generator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/generator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/generator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/market.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/news.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/social.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/visual.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/county.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/ml.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/pipeline_state.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/test_schemas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/news.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/social.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/visual.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/county.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/run_ledger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/run_ledger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/run_ledger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/run_ledger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/run_ledger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/run_ledger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/ledger/run_ledger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/artifacts/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/artifacts/saver.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_artifact_saver.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/config/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/reports/generator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_error.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_catch.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_graph_compilation.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_graph_run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/fix_nodes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilience.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/pipeline_state.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/pipeline_state.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/local_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/artifacts/saver.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/artifacts/saver.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/artifacts/saver.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/config/user_preferences.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/pipeline_state.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/pipeline_state.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/pipeline_state.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/memory/vector_store.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/memory/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_integration.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_guardrail.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_guardrail.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/mission.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/zoning_hawk.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/resilient_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/schemas/pipeline_state.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/run_graph.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/guardrails.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_guardrail_unit.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_guardrail.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_guardrail.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/test_guardrail_unit.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/test_guardrail.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/test_guardrail_unit.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/test_guardrail_unit.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/mred_mls.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/mred_mls.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/mred_mls.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/orchestration/phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 112-296-088
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 250, in locate_app
+    raise NoAppException(
+flask.cli.NoAppException: While importing 'app', an ImportError was raised:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 16, in <module>
+    from flask_httpauth import HTTPBasicAuth
+ModuleNotFoundError: No module named 'flask_httpauth'
+
+ * Debugger is active!
+ * Debugger PIN: 134-355-525
+ * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 250, in locate_app
+    raise NoAppException(
+flask.cli.NoAppException: While importing 'app', an ImportError was raised:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 16, in <module>
+    from flask_httpauth import HTTPBasicAuth
+ModuleNotFoundError: No module named 'flask_httpauth'
+
+ * Debugger is active!
+ * Debugger PIN: 134-355-525
+ * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 250, in locate_app
+    raise NoAppException(
+flask.cli.NoAppException: While importing 'app', an ImportError was raised:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 16, in <module>
+    from flask_httpauth import HTTPBasicAuth
+ModuleNotFoundError: No module named 'flask_httpauth'
+
+ * Debugger is active!
+ * Debugger PIN: 134-355-525
+ * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 250, in locate_app
+    raise NoAppException(
+flask.cli.NoAppException: While importing 'app', an ImportError was raised:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 16, in <module>
+    from flask_httpauth import HTTPBasicAuth
+ModuleNotFoundError: No module named 'flask_httpauth'
+
+ * Debugger is active!
+ * Debugger PIN: 134-355-525
+ * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 250, in locate_app
+    raise NoAppException(
+flask.cli.NoAppException: While importing 'app', an ImportError was raised:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 16, in <module>
+    from flask_httpauth import HTTPBasicAuth
+ModuleNotFoundError: No module named 'flask_httpauth'
+
+ * Debugger is active!
+ * Debugger PIN: 134-355-525
+ * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_mred_mls.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_news_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_visual_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_county_records.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_zoning_hawk.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/orchestration/test_phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_mred_mls.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_news_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_visual_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_county_records.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_zoning_hawk.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/orchestration/test_phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_mred_mls.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_news_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_visual_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_county_records.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_zoning_hawk.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/orchestration/test_phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/scouts/news_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/scouts/test_social_scout.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+INFO:werkzeug: * Detected change in '/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/Chicago_RE_Command_Center/tests/orchestration/test_phase0_orchestrator.py', reloading
+INFO:werkzeug: * Restarting with stat
+Traceback (most recent call last):
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 114, in create_app
+    settings = FlaskSettings()
+               ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic_settings/main.py", line 194, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 963, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 262, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/cli.py", line 72, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "/Users/michael_s_panico/Desktop/Gemini CLI Code Assist Agent _ 1_23_25/app.py", line 117, in create_app
+    raise RuntimeError(f"Failed to load configuration: {e}") from e
+RuntimeError: Failed to load configuration: 3 validation errors for FlaskSettings
+SECRET_KEY
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_USER
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+FLASK_PASSWORD
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-355-525
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

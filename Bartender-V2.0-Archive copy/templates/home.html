@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Discover Amazing Cocktails{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background" style="background-image: url('https://via.placeholder.com/1600x600/4a6fa5/ffffff?text=Cocktail+Background');">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1 class="hero-title">Mix, Sip, Enjoy</h1>
+                    <p class="hero-subtitle">Discover thousands of cocktail recipes crafted by bartenders worldwide.</p>
+                    <a href="{{ url_for('main.recipes') }}" class="cta-button">
+                        <i class="fas fa-glass-martini-alt"></i> Find Your Drink
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cocktails Section -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Cocktails</h2>
+            <p class="section-subtitle">Hand‑picked recipes to get you started.</p>
+
+            <div class="cocktail-grid">
+                <!-- Card 1 -->
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x300/6d8cbf/ffffff?text=Margarita" alt="Margarita cocktail">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Classic Margarita</h3>
+                        <p class="card-description">A refreshing blend of tequila, lime juice, and triple sec.</p>
+                        <div class="card-tags">
+                            <span class="tag">Tequila</span>
+                            <span class="tag">Citrus</span>
+                            <span class="tag">Easy</span>
+                        </div>
+                        <a href="{{ url_for('main.recipe_detail', id=1) }}" class="card-link">View Recipe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x300/9c6dbf/ffffff?text=Old+Fashioned" alt="Old Fashioned cocktail">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Old Fashioned</h3>
+                        <p class="card-description">Whiskey, sugar, bitters, and a twist of orange peel.</p>
+                        <div class="card-tags">
+                            <span class="tag">Whiskey</span>
+                            <span class="tag">Strong</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                        <a href="{{ url_for('main.recipe_detail', id=2) }}" class="card-link">View Recipe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x300/bf6d6d/ffffff?text=Mojito" alt="Mojito cocktail">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mojito</h3>
+                        <p class="card-description">Fresh mint, lime, sugar, white rum, and soda water.</p>
+                        <div class="card-tags">
+                            <span class="tag">Rum</span>
+                            <span class="tag">Mint</span>
+                            <span class="tag">Refreshing</span>
+                        </div>
+                        <a href="{{ url_for('main.recipe_detail', id=3) }}" class="card-link">View Recipe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x300/6dbf8c/ffffff?text=Negroni" alt="Negroni cocktail">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Negroni</h3>
+                        <p class="card-description">Equal parts gin, Campari, and sweet vermouth.</p>
+                        <div class="card-tags">
+                            <span class="tag">Gin</span>
+                            <span class="tag">Bitter</span>
+                            <span class="tag">Italian</span>
+                        </div>
+                        <a href="{{ url_for('main.recipe_detail', id=4) }}" class="card-link">View Recipe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call‑to‑Action Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to explore more?</h2>
+            <p>Browse our full collection of cocktail recipes, filter by spirit, difficulty, or occasion.</p>
+            <a href="{{ url_for('main.recipes') }}" class="cta-button secondary">
+                <i class="fas fa-list"></i> View All Recipes
+            </a>
+        </div>
+    </section>
+{% endblock %}

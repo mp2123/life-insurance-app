@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Get in Touch{% endblock %}
+
+{% block extra_css %}
+<style>
+    .contact-container { max-width: 800px; margin: 0 auto; }
+    .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+    .info-card { padding: 1.5rem; background: #f9f9f9; border-radius: 12px; }
+    .info-card i { font-size: 2rem; color: #4a6fa5; margin-bottom: 1rem; }
+    .contact-form { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+    .form-control { width: 100%; padding: 12px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+    .form-control:focus { border-color: #4a6fa5; outline: none; box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2); }
+    textarea.form-control { min-height: 150px; resize: vertical; }
+    .submit-button { padding: 14px 28px; background: #4a6fa5; color: white; border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; transition: background 0.3s; }
+    .submit-button:hover { background: #3a5a8c; }
+    .form-control.is-invalid { border-color: #bf6d6d; }
+    .invalid-feedback { color: #bf6d6d; font-size: 0.875rem; margin-top: 0.25rem; }
+    .alert { padding: 12px 16px; border-radius: 8px; margin-bottom: 1.5rem; }
+    .alert-success { background-color: #6dbf8c; color: white; }
+    .alert-error { background-color: #bf6d6d; color: white; }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="container contact-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p class="lead">Have a question, suggestion, or just want to share your favorite cocktail recipe? We'd love to hear from you.</p>
+        </div>
+
+        <!-- Contact Information Cards -->
+        <section class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>For general inquiries, write to us at:</p>
+                <a href="mailto:hello@bartender.example.com">hello@bartender.example.com</a>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>We're a digital‑first platform, but our team is based in:</p>
+                <address>
+                    San Francisco, CA<br>
+                    United States
+                </address>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Response Time</h3>
+                <p>We strive to respond to all messages within <strong>24‑48 hours</strong> on business days.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send us a Message</h2>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="flash-messages">
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            <form method="POST" action="{{ url_for('main.contact') }}" id="contactForm">
+                {{ csrf_token() }}
+
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name *</label>
+                    <input type="text" id="name" name="name" class="form-control {% if errors.name %}is-invalid{% endif %}" placeholder="John Doe" required aria-required="true" value="{{ name }}">
+                    {% if errors.name %}
+                    <div class="invalid-feedback">{{ errors.name }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-control {% if errors.email %}is-invalid{% endif %}" placeholder="john@example.com" required aria-required="true" value="{{ email }}">
+                    {% if errors.email %}
+                    <div class="invalid-feedback">{{ errors.email }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <select id="subject" name="subject" class="form-control">
+                        <option value="" {% if subject == '' %}selected{% endif %}>Select a topic</option>
+                        <option value="recipe_suggestion" {% if subject == 'recipe_suggestion' %}selected{% endif %}>Recipe Suggestion</option>
+                        <option value="bug_report" {% if subject == 'bug_report' %}selected{% endif %}>Bug Report</option>
+                        <option value="feature_request" {% if subject == 'feature_request' %}selected{% endif %}>Feature Request</option>
+                        <option value="partnership" {% if subject == 'partnership' %}selected{% endif %}>Partnership Inquiry</option>
+                        <option value="other" {% if subject == 'other' %}selected{% endif %}>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea id="message" name="message" class="form-control {% if errors.message %}is-invalid{% endif %}" placeholder="Tell us what's on your mind..." required aria-required="true">{{ message }}</textarea>
+                    {% if errors.message %}
+                    <div class="invalid-feedback">{{ errors.message }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter" {% if newsletter %}checked{% endif %}>
+                        <label for="newsletter">Send me occasional updates about new recipes and features (you can unsubscribe anytime).</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </section>
+
+        <!-- FAQ Teaser -->
+        <section class="faq-teaser">
+            <h2>Frequently Asked Questions</h2>
+            <p>Before contacting, you might find an answer in our <a href="#">FAQ section</a>.</p>
+            <ul>
+                <li><strong>Can I submit my own cocktail recipe?</strong> Yes! We welcome community submissions. Use the form above and select "Recipe Suggestion".</li>
+                <li><strong>Is Bartender V2.0 free to use?</strong> Absolutely. All recipes and features are completely free.</li>
+                <li><strong>Do you have a mobile app?</strong> Not yet, but our website is fully responsive on mobile devices.</li>
+            </ul>
+        </section>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Basic form validation placeholder
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+            e.preventDefault();
+            alert('Please fill out all required fields.');
+            return;
+        }
+
+        // In a real app, you would perform additional validation and maybe send via AJAX
+        console.log('Contact form submitted');
+    });
+</script>
+{% endblock %}

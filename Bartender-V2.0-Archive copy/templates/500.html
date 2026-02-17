@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Internal Server Error (500){% endblock %}
+
+{% block extra_css %}
+<style>
+    .error-container { text-align: center; padding: 4rem 2rem; max-width: 800px; margin: 0 auto; }
+    .error-code { font-size: 8rem; font-weight: 900; color: #bf6d6d; line-height: 1; margin: 0; }
+    .error-message { font-size: 2rem; margin: 1rem 0 2rem; }
+    .error-description { font-size: 1.2rem; color: #666; margin-bottom: 3rem; }
+    .error-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .btn { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-primary { background: #bf6d6d; color: white; }
+    .btn-secondary { background: #f0f0f0; color: #333; }
+    .technical-details { background: #f9f9f9; border-left: 4px solid #bf6d6d; padding: 1rem; margin-top: 2rem; text-align: left; font-family: monospace; font-size: 0.9rem; border-radius: 4px; }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="error-container">
+        <h1 class="error-code">500</h1>
+        <h2 class="error-message">Something went wrong on our end.</h2>
+        <p class="error-description">
+            Our bartenders are scrambling to fix the issue. It looks like the cocktail shaker got stuck.
+            Please try again in a few moments, or head back to a safer part of the site.
+        </p>
+
+        <div class="error-actions">
+            <a href="{{ url_for('main.home') }}" class="btn btn-primary">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+            <a href="{{ url_for('main.recipes') }}" class="btn btn-secondary">
+                <i class="fas fa-glass-martini-alt"></i> Browse Recipes
+            </a>
+            <a href="{{ url_for('main.contact') }}" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i> Report Problem
+            </a>
+        </div>
+
+        <!-- Illustration placeholder -->
+        <div style="margin-top: 4rem;">
+            <img src="https://via.placeholder.com/400x200/bf6d6d/ffffff?text=500+Server+Error" alt="Server error illustration" style="border-radius: 12px;">
+        </div>
+
+        <!-- Technical details (only shown in debug mode) -->
+        {% if debug %}
+            <div class="technical-details">
+                <strong>Debug Information:</strong><br>
+                Error: {{ error.__class__.__name__ }}<br>
+                Message: {{ error }}<br>
+                <small>This information is only visible because the application is in debug mode.</small>
+            </div>
+        {% endif %}
+
+        <div style="margin-top: 2rem; font-size: 0.9rem; color: #999;">
+            <p>If the problem persists, please <a href="{{ url_for('main.contact') }}">contact our support team</a> and describe what you were doing.</p>
+        </div>
+    </div>
+{% endblock %}

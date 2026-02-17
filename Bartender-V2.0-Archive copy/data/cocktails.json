@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Old Fashioned",
+    "category": "The Unforgettables",
+    "base_spirit": "Whiskey",
+    "difficulty": "Easy",
+    "prep_time": "5 minutes",
+    "ingredients": [
+      {"item": "Bourbon or Rye Whiskey", "amount": "2 oz"},
+      {"item": "Sugar Cube", "amount": "1"},
+      {"item": "Angostura Bitters", "amount": "2 dashes"},
+      {"item": "Water", "amount": "1 tsp"},
+      {"item": "Orange Peel", "amount": "1 (for garnish)"}
+    ],
+    "instructions": [
+      "Place sugar cube in an Old Fashioned glass.",
+      "Saturate with bitters and add water.",
+      "Muddle until sugar is dissolved.",
+      "Add whiskey and stir.",
+      "Add large ice cube and stir again.",
+      "Express orange peel over the drink and drop it in."
+    ],
+    "garnish": "Orange peel",
+    "tags": ["Classic", "Strong", "Bitter", "Winter"]
+  },
+  {
+    "id": 2,
+    "name": "Mojito",
+    "category": "Contemporary Classics",
+    "base_spirit": "Rum",
+    "difficulty": "Medium",
+    "prep_time": "7 minutes",
+    "ingredients": [
+      {"item": "White Rum", "amount": "2 oz"},
+      {"item": "Lime Juice", "amount": "1 oz"},
+      {"item": "Simple Syrup", "amount": "¾ oz"},
+      {"item": "Mint Leaves", "amount": "10-12"},
+      {"item": "Club Soda", "amount": "Top up"},
+      {"item": "Crushed Ice", "amount": "As needed"}
+    ],
+    "instructions": [
+      "Lightly muddle mint leaves and simple syrup in a tall glass.",
+      "Add lime juice and rum.",
+      "Fill the glass with crushed ice and stir.",
+      "Top with club soda and gently stir again.",
+      "Garnish with a mint sprig and lime wheel."
+    ],
+    "garnish": "Mint sprig, lime wheel",
+    "tags": ["Refreshing", "Summer", "Minty", "Party"]
+  },
+  {
+    "id": 3,
+    "name": "Martini",
+    "category": "The Unforgettables",
+    "base_spirit": "Gin",
+    "difficulty": "Medium",
+    "prep_time": "4 minutes",
+    "ingredients": [
+      {"item": "Gin", "amount": "2½ oz"},
+      {"item": "Dry Vermouth", "amount": "½ oz"},
+      {"item": "Ice", "amount": "As needed"}
+    ],
+    "instructions": [
+      "Fill a mixing glass with ice.",
+      "Add gin and dry vermouth.",
+      "Stir well until chilled (about 30 seconds).",
+      "Strain into a chilled martini glass.",
+      "Garnish with a lemon twist or olive."
+    ],
+    "garnish": "Lemon twist or olive",
+    "tags": ["Classic", "Strong", "Sophisticated", "Dry"]
+  },
+  {
+    "id": 4,
+    "name": "Mai Tai",
+    "category": "Tiki",
+    "base_spirit": "Rum",
+    "difficulty": "Complex",
+    "prep_time": "8 minutes",
+    "ingredients": [
+      {"item": "Aged Rum", "amount": "2 oz"},
+      {"item": "Lime Juice", "amount": "1 oz"},
+      {"item": "Orange Curaçao", "amount": "½ oz"},
+      {"item": "Orgeat (almond syrup)", "amount": "½ oz"},
+      {"item": "Simple Syrup", "amount": "¼ oz"},
+      {"item": "Crushed Ice", "amount": "As needed"}
+    ],
+    "instructions": [
+      "Add all ingredients except crushed ice to a shaker with ice.",
+      "Shake vigorously for 10–15 seconds.",
+      "Fill a double Old Fashioned glass with crushed ice.",
+      "Strain the mixture over the crushed ice.",
+      "Garnish with a mint sprig and lime shell."
+    ],
+    "garnish": "Mint sprig, lime shell",
+    "tags": ["Tropical", "Complex", "Sweet", "Party"]
+  },
+  {
+    "id": 5,
+    "name": "Negroni",
+    "category": "The Unforgettables",
+    "base_spirit": "Gin",
+    "difficulty": "Easy",
+    "prep_time": "3 minutes",
+    "ingredients": [
+      {"item": "Gin", "amount": "1 oz"},
+      {"item": "Campari", "amount": "1 oz"},
+      {"item": "Sweet Vermouth", "amount": "1 oz"},
+      {"item": "Orange Peel", "amount": "1 (for garnish)"}
+    ],
+    "instructions": [
+      "Fill a mixing glass with ice.",
+      "Add gin, Campari, and sweet vermouth.",
+      "Stir until well chilled.",
+      "Strain into a rocks glass over a large ice cube.",
+      "Express orange peel over the drink and drop it in."
+    ],
+    "garnish": "Orange peel",
+    "tags": ["Bitter", "Strong", "Classic", "Aperitif"]
+  },
+  {
+    "id": 6,
+    "name": "Whiskey Sour",
+    "category": "Classics",
+    "base_spirit": "Whiskey",
+    "difficulty": "Medium",
+    "prep_time": "6 minutes",
+    "ingredients": [
+      {"item": "Bourbon Whiskey", "amount": "2 oz"},
+      {"item": "Lemon Juice", "amount": "¾ oz"},
+      {"item": "Simple Syrup", "amount": "¾ oz"},
+      {"item": "Egg White (optional)", "amount": "1"},
+      {"item": "Ice", "amount": "As needed"}
+    ],
+    "instructions": [
+      "Add bourbon, lemon juice, simple syrup, and egg white (if using) to a shaker.",
+      "Dry shake (without ice) for 10 seconds to emulsify egg white.",
+      "Add ice and shake again vigorously for 15 seconds.",
+      "Strain into a rocks glass over fresh ice.",
+      "Garnish with a cherry and/or lemon wheel."
+    ],
+    "garnish": "Cherry, lemon wheel",
+    "tags": ["Sour", "Classic", "Creamy", "Strong"]
+  },
+  {
+    "id": 7,
+    "name": "Margarita",
+    "category": "Contemporary Classics",
+    "base_spirit": "Tequila",
+    "difficulty": "Easy",
+    "prep_time": "5 minutes",
+    "ingredients": [
+      {"item": "Tequila Blanco", "amount": "2 oz"},
+      {"item": "Lime Juice", "amount": "1 oz"},
+      {"item": "Orange Liqueur (Cointreau)", "amount": "1 oz"},
+      {"item": "Salt", "amount": "For rim (optional)"},
+      {"item": "Ice", "amount": "As needed"}
+    ],
+    "instructions": [
+      "Rim a margarita glass with salt (optional).",
+      "Add tequila, lime juice, and orange liqueur to a shaker with ice.",
+      "Shake vigorously for 10–15 seconds.",
+      "Strain into the prepared glass over fresh ice.",
+      "Garnish with a lime wheel."
+    ],
+    "garnish": "Lime wheel",
+    "tags": ["Refreshing", "Citrus", "Party", "Summer"]
+  },
+  {
+    "id": 8,
+    "name": "Daiquiri",
+    "category": "Classics",
+    "base_spirit": "Rum",
+    "difficulty": "Easy",
+    "prep_time": "4 minutes",
+    "ingredients": [
+      {"item": "White Rum", "amount": "2 oz"},
+      {"item": "Lime Juice", "amount": "1 oz"},
+      {"item": "Simple Syrup", "amount": "¾ oz"},
+      {"item": "Ice", "amount": "As needed"}
+    ],
+    "instructions": [
+      "Add rum, lime juice, and simple syrup to a shaker with ice.",
+      "Shake vigorously for 10–15 seconds.",
+      "Strain into a chilled coupe glass.",
+      "Garnish with a lime wheel (optional)."
+    ],
+    "garnish": "Lime wheel (optional)",
+    "tags": ["Refreshing", "Simple", "Citrus", "Summer"]
+  }
+]

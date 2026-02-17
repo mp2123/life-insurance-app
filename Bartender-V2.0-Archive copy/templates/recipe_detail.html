@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block title %}{{ cocktail.name }} - Recipe Details{% endblock %}
+
+{% block extra_css %}
+<style>
+    .recipe-hero { position: relative; height: 400px; overflow: hidden; border-radius: 12px; margin-bottom: 2rem; }
+    .recipe-hero img { width: 100%; height: 100%; object-fit: cover; }
+    .recipe-hero-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 2rem; }
+    .recipe-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0; }
+    .meta-item { display: flex; align-items: center; gap: 0.5rem; }
+    .ingredients-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+    .ingredient-item { padding: 12px; border: 1px solid #eee; border-radius: 8px; }
+    .step-list { list-style: none; padding-left: 0; }
+    .step-list li { counter-increment: step; margin-bottom: 1.5rem; padding-left: 3rem; position: relative; }
+    .step-list li::before { content: counter(step); position: absolute; left: 0; top: 0; background: #4a6fa5; color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <!-- Back Navigation -->
+        <nav class="breadcrumb">
+            <a href="{{ url_for('main.recipes') }}"><i class="fas fa-arrow-left"></i> Back to Recipes</a>
+        </nav>
+
+        <!-- Print Recipe Button -->
+        <div class="print-button-container" style="margin-bottom: 2rem; text-align: right;">
+            <button onclick="window.print();" class="btn btn-primary">
+                <i class="fas fa-print"></i> Print Recipe
+            </button>
+        </div>
+
+        <!-- Recipe Hero -->
+        <section class="recipe-hero">
+            <img src="https://via.placeholder.com/1200x400/4a6fa5/ffffff?text={{ cocktail.name|urlencode }}" alt="{{ cocktail.name }}">
+            <div class="recipe-hero-overlay">
+                <h1 class="recipe-title">{{ cocktail.name }}</h1>
+                <p class="recipe-subtitle">{{ cocktail.tagline }}</p>
+            </div>
+        </section>
+
+        <!-- Meta Information -->
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <i class="fas fa-clock"></i>
+                <span><strong>Prep Time:</strong> {{ cocktail.prep_time }} minutes</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-flask"></i>
+                <span><strong>Difficulty:</strong> {{ cocktail.difficulty }}</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-user-friends"></i>
+                <span><strong>Serves:</strong> {{ cocktail.serves }}</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-star"></i>
+                <span><strong>Rating:</strong> {{ cocktail.rating }}/5</span>
+            </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="recipe-tags">
+            {% for tag in cocktail.tags %}
+                <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+
+        <div class="recipe-body">
+            <div class="grid-two-column">
+                <!-- Ingredients -->
+                <section class="ingredients">
+                    <h2><i class="fas fa-list-ul"></i> Ingredients</h2>
+                    <div class="ingredients-grid">
+                        {% for ingredient in cocktail.ingredients %}
+                            <div class="ingredient-item">
+                                <strong>{{ ingredient.amount }}</strong> {{ ingredient.name }}
+                                {% if ingredient.note %}
+                                    <br><small class="text-muted">{{ ingredient.note }}</small>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <!-- Instructions -->
+                <section class="instructions">
+                    <h2><i class="fas fa-list-ol"></i> Instructions</h2>
+                    <ol class="step-list">
+                        {% for step in cocktail.instructions %}
+                            <li>{{ step }}</li>
+                        {% endfor %}
+                    </ol>
+                </section>
+            </div>
+
+            <!-- Garnish & Glassware -->
+            <div class="grid-two-column">
+                <section class="garnish">
+                    <h2><i class="fas fa-leaf"></i> Garnish</h2>
+                    <p>{{ cocktail.garnish }}</p>
+                </section>
+                <section class="glassware">
+                    <h2><i class="fas fa-glass-whiskey"></i> Recommended Glass</h2>
+                    <p>{{ cocktail.glass }}</p>
+                </section>
+            </div>
+
+            <!-- Notes (optional) -->
+            <section class="notes">
+                <h2><i class="fas fa-sticky-note"></i> Bartender's Notes</h2>
+                <p>{{ cocktail.notes }}</p>
+            </section>
+
+            <!-- Similar Drinks -->
+            <section class="similar-drinks">
+                <h2><i class="fas fa-cocktail"></i> You Might Also Like</h2>
+                <p>If you enjoyed this cocktail, try these similar recipes.</p>
+                <div class="similar-grid">
+                    {% for similar in similar_cocktails %}
+                        <div class="similar-card">
+                            <img src="{{ similar.image }}" alt="{{ similar.name }}" style="height: 120px; object-fit: cover; border-radius: 8px;">
+                            <h4>{{ similar.name }}</h4>
+                            <p>{{ similar.description }}</p>
+                            <a href="{{ url_for('main.recipe_detail', id=similar.id) }}" class="small-link">View Recipe</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Placeholder for interactive elements (e.g., toggle units)
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Recipe detail page loaded');
+    });
+</script>
+{% endblock %}

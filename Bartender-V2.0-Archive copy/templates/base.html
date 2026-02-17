@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartender V2.0 - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .alert { padding: 12px 16px; border-radius: 8px; margin-bottom: 1.5rem; }
+        .alert-success { background-color: #6dbf8c; color: white; }
+        .alert-error { background-color: #bf6d6d; color: white; }
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo / Brand -->
+                <a href="{{ url_for('main.home') }}" class="brand">
+                    <i class="fas fa-cocktail"></i>
+                    <span>Bartender V2.0</span>
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('main.home') }}"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="{{ url_for('main.recipes') }}"><i class="fas fa-glass-martini-alt"></i> Recipes</a></li>
+                    <li><a href="{{ url_for('main.contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <form action="#" method="get" role="search">
+                        <input type="text" placeholder="Search cocktails..." name="q" aria-label="Search cocktails">
+                        <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Bartender V2.0</h3>
+                <p>Your go‑to platform for discovering and sharing cocktail recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{{ url_for('main.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('main.recipes') }}">Recipes</a></li>
+                    <li><a href="{{ url_for('main.contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bartender V2.0. All rights reserved. | Made with <i class="fas fa-heart"></i> for cocktail enthusiasts</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
