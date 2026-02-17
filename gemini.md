@@ -12,8 +12,8 @@
 
 ## 📜 Standard Operating Procedures
 1.  **Monorepo Management:** 
-    - `frontend/` contains the Insurance App.
-    - `bartender-app/` contains the Mixology Portfolio.
+    - `apps/insurance-app/` contains the Insurance App.
+    - `apps/mixology-app/` contains the Mixology Portfolio.
 2.  **Database Connection:** Use the **Session Pooler (Port 5432)** for all Prisma CLI operations (`db push`, `generate`) to avoid IPv6/Transaction pooling hangs.
 3.  **Visual Standards:** Use "Gaia" theme for Insurance and "Neutral/Amber" glassmorphism for Bartending.
 4.  **AI BYOK:** Ensure the "Settings" button in the chatbot is used to save personal Gemini/OpenAI keys to `localStorage`.
@@ -28,6 +28,6 @@
 1.  **Bartender Database Setup:**
     - Run `npx prisma db push` using the new Bartender Supabase URL.
     - Run `node prisma/seed-bartender.js` to upload initial cocktail recipes.
-2.  **Video Integration:** Embed personal bartending tutorial videos into the `bartender-app` landing page.
+2.  **Video Integration:** Embed personal bartending tutorial videos into the `apps/mixology-app` landing page.
 3.  **Affiliate Shop:** Add curated bar tool links to the `Product` table in Supabase.
 4.  **Practice Exam Logic:** Build the interactive testing UI for the Insurance app using the live `Question` table.

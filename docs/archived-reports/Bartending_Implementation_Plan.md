@@ -2,8 +2,8 @@
 
 This roadmap details the process of duplicating and transforming the existing high-end architecture into a personal Bartending platform for videos, recipes, and affiliate marketing.
 
-## 1. Environment & Setup
-- **Duplication:** Clone the `frontend` directory into a new `bartending-app` folder.
+## 1. Environment & Setup (✅ Implemented)
+- **Duplication:** Clone the `apps/insurance-app/` directory into a new `apps/mixology-app/` folder.
 - **New Database:** Create a separate **Supabase** project specifically for the bartending app to keep the data isolated.
 - **Hosting:** Set up a new **Vercel** project linked to a new GitHub repository.
 

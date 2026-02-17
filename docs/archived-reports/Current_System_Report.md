@@ -2,8 +2,8 @@
 
 ## 1. Core Architecture
 The workspace uses a **Monorepo** structure:
-- **`/frontend`**: Life Insurance AZ 2026 Study App.
-- **`/bartender-app`**: Professional Mixology Portfolio.
+- **`apps/insurance-app/`**: Life Insurance AZ 2026 Study App.
+- **`apps/mixology-app/`**: Professional Mixology Portfolio.
 Both are built with **Next.js 16**, **Tailwind CSS 4**, and **TypeScript**. They are hosted as separate projects on **Vercel**, sharing a single GitHub repository.
 
 ## 2. High-Performance Visuals
