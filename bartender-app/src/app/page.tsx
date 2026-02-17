@@ -21,6 +21,8 @@ import { CardScanner } from "@/components/ui/card-scanner";
 import { VideoGallery } from "@/components/ui/video-gallery";
 import { RecipeGallery } from "@/components/ui/recipe-gallery";
 import { AffiliateStore } from "@/components/ui/affiliate-store";
+import { AboutTheBartender } from "@/components/ui/about-bartender";
+import { RecipeRequestForm } from "@/components/ui/recipe-request-form";
 
 export default function DemoOne() {
   const [mounted, setMounted] = useState(false);
@@ -92,6 +94,12 @@ export default function DemoOne() {
 
         {/* Professional Bar Gear Shop */}
         <AffiliateStore />
+
+        {/* About the Bartender */}
+        <AboutTheBartender />
+
+        {/* Recipe Request Section */}
+        <RecipeRequestForm />
 
         {/* Interactive Spline 3D Section */}
         <section className="mx-auto w-full max-w-5xl px-4 py-20">
@@ -192,6 +200,7 @@ interface GridItemProps {
   icon: React.ReactNode;
   title: string;
   description: React.ReactNode;
+  
 }
 
 const GridItem = ({ area, icon, title, description }: GridItemProps) => {
