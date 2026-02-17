@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Pause, Play, RotateCcw, ArrowLeftRight } from "lucide-react";
 
 // --- Types & Constants ---
-const codeChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789(){}[]<>;:,._-+=!@#$%^&*|\/'`~?";
-
 const cardImages = [
   "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800",
   "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800",
@@ -56,6 +54,7 @@ export const CardScanner = () => {
   const [velocity, setVelocity] = useState(120);
   const [position, setPosition] = useState(0);
   const [glitchTrigger, setGlitchTrigger] = useState(0);
+  const [mounted, setMounted] = useState(false);
   
   const containerRef = useRef<HTMLDivElement>(null);
   const particleCanvasRef = useRef<HTMLCanvasElement>(null);
@@ -73,19 +72,24 @@ export const CardScanner = () => {
     scanningActive: false,
   });
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   // ASCII Glitch Loop
   useEffect(() => {
+    if (!mounted) return;
     const interval = setInterval(() => {
       if (stateRef.current.scanningActive) {
         setGlitchTrigger(prev => prev + 1);
       }
     }, 150);
     return () => clearInterval(interval);
-  }, []);
+  }, [mounted]);
 
   // --- Particle Systems ---
   useEffect(() => {
-    if (!particleCanvasRef.current) return;
+    if (!mounted || !particleCanvasRef.current) return;
 
     const scene = new THREE.Scene();
     const camera = new THREE.OrthographicCamera(
@@ -145,7 +149,6 @@ export const CardScanner = () => {
     let frame: number;
     const animate = () => {
       const posAttr = geometry.attributes.position;
-      const alphaAttr = geometry.attributes.alpha;
       for (let i = 0; i < count; i++) {
         posAttr.array[i * 3] += vels[i] * 0.016;
         if (posAttr.array[i * 3] > window.innerWidth / 2 + 100) {
@@ -162,12 +165,12 @@ export const CardScanner = () => {
       cancelAnimationFrame(frame);
       renderer.dispose();
     };
-  }, []);
+  }, [mounted]);
 
   // --- Scanner 2D Logic ---
   useEffect(() => {
+    if (!mounted || !scannerCanvasRef.current) return;
     const canvas = scannerCanvasRef.current;
-    if (!canvas) return;
     const ctx = canvas.getContext('2d')!;
     let w = window.innerWidth;
     let h = 300;
@@ -194,7 +197,6 @@ export const CardScanner = () => {
     const render = () => {
       ctx.clearRect(0, 0, w, h);
       
-      // Draw Scanner Line
       const grad = ctx.createLinearGradient(w/2-2, 0, w/2+2, 0);
       grad.addColorStop(0, 'transparent');
       grad.addColorStop(0.5, stateRef.current.scanningActive ? '#0ff' : '#444');
@@ -224,10 +226,11 @@ export const CardScanner = () => {
     render();
 
     return () => cancelAnimationFrame(frame);
-  }, []);
+  }, [mounted]);
 
   // --- Card Stream Loop ---
   useEffect(() => {
+    if (!mounted) return;
     let frame: number;
     const loop = (t: number) => {
       const dt = (t - stateRef.current.lastTime) / 1000;
@@ -236,7 +239,6 @@ export const CardScanner = () => {
       if (stateRef.current.isAnimating && !stateRef.current.isDragging) {
         stateRef.current.position += stateRef.current.velocity * stateRef.current.direction * dt;
         
-        // Wrap logic
         const cardWidth = 400 + 60;
         const totalWidth = cardWidth * 10;
         if (stateRef.current.position < -totalWidth) stateRef.current.position = window.innerWidth;
@@ -245,7 +247,6 @@ export const CardScanner = () => {
         setPosition(stateRef.current.position);
       }
 
-      // Clipping Logic for Scanner
       const scannerX = window.innerWidth / 2;
       let anyActive = false;
       
@@ -255,12 +256,12 @@ export const CardScanner = () => {
         const normal = card.querySelector('.card-normal');
         const ascii = card.querySelector('.card-ascii');
         
-        if (rect.left < scannerX + 4 && rect.right > scannerX - 4) {
+        if (normal && ascii && rect.left < scannerX + 4 && rect.right > scannerX - 4) {
             anyActive = true;
             const intersect = ((scannerX - rect.left) / rect.width) * 100;
             normal.style.setProperty('--clip-right', `${intersect}%`);
             ascii.style.setProperty('--clip-left', `${intersect}%`);
-        } else {
+        } else if (normal && ascii) {
             if (rect.right < scannerX) {
                 normal.style.setProperty('--clip-right', '100%');
                 ascii.style.setProperty('--clip-left', '100%');
@@ -276,7 +277,9 @@ export const CardScanner = () => {
     };
     frame = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(frame);
-  }, []);
+  }, [mounted]);
+
+  if (!mounted) return <div className="h-[500px] w-full bg-black" />;
 
   return (
     <div className="relative w-full h-[500px] bg-black overflow-hidden flex items-center justify-center group" ref={containerRef}>
