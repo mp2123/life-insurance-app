@@ -19,6 +19,7 @@
 4.  **AI BYOK:** Ensure the "Settings" button in the chatbot is used to save personal Gemini/OpenAI keys to `localStorage`.
 
 ## 🚀 Technical Status & Milestones
+- **[x] Documentation Overhaul:** Comprehensive root, app-level, and directory-specific READMEs implemented.
 - **[x] Insurance Database Live:** 307 verified questions successfully seeded to Supabase.
 - **[x] Butter-Smooth Scroll:** Optimized `card-scanner.tsx` with `useAnimationFrame` for 120Hz smooth motion.
 - **[x] Bartender App Cloned:** Architecture duplicated and themed for Mixology.
